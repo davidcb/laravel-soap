@@ -118,7 +118,7 @@ class SoapTesting
             PHPUnit::assertTrue($callback(
                 $this->factory->getRecorded()[$index][0],
                 $this->factory->getRecorded()[$index][1]
-            ), 'An expected request (#'.($index + 1).') was not recorded.');
+            ), 'An expected request (#' . ($index + 1) . ') was not recorded.');
         }
     }
 }

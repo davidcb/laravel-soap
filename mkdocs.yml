@@ -2,8 +2,8 @@ site_name: Laravel SOAP Docs
 site_description: 'Laravel SOAP Documentation'
 site_author: 'Gregor Becker'
 docs_dir: docs/v2/
-repo_name: 'codedredd/laravel-soap'
-repo_url: 'https://github.com/codedredd/laravel-soap'
+repo_name: 'davidcb/laravel-soap'
+repo_url: 'https://github.com/davidcb/laravel-soap'
 
 # Copyright
 copyright: Copyright &copy; 2020 - 2020 Gregor Becker

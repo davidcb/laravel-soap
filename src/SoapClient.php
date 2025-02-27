@@ -418,7 +418,7 @@ class SoapClient
     public function byConfig(string $setup)
     {
         if (! empty($setup)) {
-            $setup = config()->get('soap.clients.'.$setup);
+            $setup = config()->get('soap.clients.' . $setup);
             if (! $setup) {
                 throw new NotFoundConfigurationException($setup);
             }
@@ -610,7 +610,7 @@ class SoapClient
         $this->extSoapOptions = ExtSoapOptions::defaults($this->wsdl, $this->options);
         if ($this->factory->isRecording()) {
             $this->wsdlProvider = new FlatteningLoader(new StreamWrapperLoader());
-//            $this->extSoapOptions->withWsdlProvider($this->wsdlProvider);
+            //            $this->extSoapOptions->withWsdlProvider($this->wsdlProvider);
         }
     }
 

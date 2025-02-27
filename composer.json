@@ -1,5 +1,5 @@
 {
-    "name": "codedredd/laravel-soap",
+    "name": "davidcb/laravel-soap",
     "description": "A SoapClient wrapper integration for Laravel",
     "keywords": [
         "laravel",

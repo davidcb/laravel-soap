@@ -109,8 +109,8 @@ class Response implements ResultInterface, ArrayAccess
         $body = (string) $this->response->getBody();
         if ($transformXml && Str::contains($body, '<?xml')) {
             $message = Document::fromXmlString($body)
-                    ->xpath()
-                    ->evaluate('string(.//faultstring)', string())
+                ->xpath()
+                ->evaluate('string(.//faultstring)', string())
                 ?? 'No Fault Message found';
 
             return trim($sanitizeXmlFaultMessage ? Str::after($message, 'Exception:') : $message);
